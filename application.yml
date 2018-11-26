@@ -1,0 +1,17 @@
+﻿spring:
+  profiles:
+    active: dev
+
+---
+# 开发环境配置
+spring:
+  profiles: dev
+  application:
+    name: zhaowei-config-dev
+
+---
+# 测试环境配置
+spring:
+  profiles: test
+  application:
+    name: zhaowei-config-test
