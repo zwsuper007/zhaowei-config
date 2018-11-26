@@ -9,7 +9,8 @@ server:
 
 spring:
   profiles: dev
-  application: zhaowei-config-client
+  application: 
+  name: zhaowei-config-client
  
 eureka:
   client:
@@ -26,7 +27,8 @@ server:
 
 spring:
   profiles: test
-  application: zhaowei-config-client
+  application: 
+  name：zhaowei-config-client
  
 eureka:
   client:
