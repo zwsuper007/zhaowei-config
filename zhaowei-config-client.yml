@@ -1,0 +1,37 @@
+spring:
+  profiles:
+    active: dev
+
+---
+
+server: 
+  port: 9002
+
+spring:
+  profiles: dev
+  application: zhaowei-config-client
+ 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://provider:provider-mytian0818@localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: config-client-dev
+
+---
+
+server: 
+  port: 9003
+
+spring:
+  profiles: test
+  application: zhaowei-config-client
+ 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://provider:provider-mytian0818@localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: config-client-test
