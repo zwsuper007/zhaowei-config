@@ -28,7 +28,7 @@ server:
 spring:
   profiles: test
   application: 
-  name：zhaowei-config-client
+  name: zhaowei-config-client
  
 eureka:
   client:
